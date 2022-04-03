@@ -195,6 +195,10 @@ body {
   justify-content: space-between;
 }
 
+#process_order {
+  display: flex;
+}
+
 #payment .priceTitle {
   font-size: 14px;
   color: #151b39;
@@ -210,6 +214,14 @@ body {
   line-height: 24px;
   float: right;
 }
+
+#process_order {
+  display: flex;
+}
+#process_order > p {
+  padding: 15px 0;
+}
+
 #payment button {
   width: 98%;
   margin: 15px 1%;
@@ -218,5 +230,5 @@ body {
   background-color: #1cadaf;
   color: white;
   font-weight: bold;
-  border-radius: inherit;
+  border-radius: 5px;
 }

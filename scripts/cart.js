@@ -85,9 +85,18 @@ function payment(totalMrp, totalDiscount, totalAmount) {
   amt_value.innerHTML = `Rs.${totalAmount}`;
   amount_div.append(amt_title, amt_value);
 
+  let order = document.createElement("div");
+  order.setAttribute("id", "process_order");
+  let pay_amount = document.createElement("p");
+  pay_amount.innerHTML = `Total Amount Rs.${totalAmount}`;
+  let orderBtn = document.createElement("button");
+  orderBtn.setAttribute("class", "order_btn");
+  orderBtn.innerText = "PROCEED";
+  order.append(pay_amount, orderBtn);
+
   document
     .getElementById("payment")
-    .append(payment_title, mrp_div, dis_div, amount_div);
+    .append(payment_title, mrp_div, dis_div, amount_div, order);
 }
 
 appendData(data);

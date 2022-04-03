@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=stylesheet href="/styles/navbar.css">
+    <link rel=stylesheet href="/styles/footer.css">
+
+    <link rel="stylesheet" href="/styles/wellness.css">
+    <script type="module" src="../main.js"></script>
+    <script src="/scripts/wellness.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="container">
+        <h2>Popular Categories</h2>
+        <div id="popular_categories">
+            <div class="select_type">
+                <div class="category_img">
+                    <img src="https://www.netmeds.com/images/category/3055/thumb/covid_essentials_1.jpg" alt="">
+                </div>
+                <div class="category_name">Covid Essentials</div>
+            </div>
+            <div class="select_type">
+                <div class="category_img">
+                    <img src="https://www.netmeds.com/images/category/v1/3251/thumb/sexual_wellness_0_200.jpg" alt="">
+
+                </div>
+                <div class="category_name">Sexual Wellness</div>
+            </div>
+            <div class="select_type">
+                <div class="category_img">
+                    <img src="https://www.netmeds.com/images/category/3222/thumb/vitamins_and_supplements_0.jpg" alt="">
+
+                </div>
+                <div class="category_name">Vitamins And Supplements</div>
+            </div>
+            <div class="select_type">
+                <div class="category_img">
+                    <img src="https://www.netmeds.com/images/category/491/thumb/homeopathy_1.jpg" alt="">
+
+                </div>
+                <div class="category_name">Homeopathy</div>
+            </div>
+            <div class="select_type">
+                <div class="category_img">
+                    <img src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_1.jpg" alt="">
+
+                </div>
+                <div class="category_name">Ayurvedic</div>
+            </div>
+        </div>
+        <div id="limited_time_deals">
+            <h2>Limited Time Deals</h2>
+            <p class="sub_text">Grab Before The Deal Ends</p>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="category_img">
+                            <img src="https://www.netmeds.com/images/product-v1/150x150/930971/skin_elements_face_pack_turmeric_multani_mitti_100_gm_0_2.jpg"
+                                alt="">
+                            <span class="discount-tag">38% OFF</span>
+
+                        </div>
+                        <div class="category_name">Skin Elements Face Pack - Turmeric & Multani Mitti 100 gm</div>
+                        <span class="item_price"> <span class="">Best price* </span><span id="final_price"> Rs.
+                                247.38</span>
+                            <p class="price"> MRP <strike id="price">Rs. 399.00</strike></p>
+                        </span>
+                        <button id="addToCartBtn" value="Skin Elements Face Pack - Turmeric & Multani Mitti 100 gm"
+                            onclick="addToCart(this.value)">ADD TO CART</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category_img">
+                            <img src="https://www.netmeds.com/images/product-v1/150x150/924985/skin_elements_mens_intimate_wash_60_ml_0_2.jpg"
+                                alt="">
+                            <span class="discount-tag">38% OFF</span>
+
+                        </div>
+                        <div class="category_name">Skin Elements Men's Intimate Wash 60 ml</div>
+                        <span class="item_price"> <span class="">Best price* </span><span id="final_price"> Rs.
+                                247.38</span>
+                            <p class="price"> MRP <strike id="price">Rs. 399.00</strike></p>
+                        </span>
+                        <button id="addToCartBtn" value="Skin Elements Men's Intimate Wash 60 ml"
+                            onclick="addToCart(this.value)">ADD TO CART</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category_img">
+                            <img src="https://www.netmeds.com/images/product-v1/150x150/924992/skin_elements_mens_intimate_wash_120_ml_0_2.jpg"
+                                alt="">
+                            <span class="discount-tag">40% OFF</span>
+
+                        </div>
+                        <div class="category_name">Skin Elements Men's Intimate Wash 120 ml</div>
+                        <span class="item_price"> <span class="">Best price* </span><span id="final_price"> Rs.
+                                419.40</span>
+                            <p class="price"> MRP <strike id="price">Rs. 699.00</strike></p>
+                        </span>
+                        <button id="addToCartBtn" value="Skin Elements Men's Intimate Wash 120 ml"
+                            onclick="addToCart(this.value)">ADD TO CART</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category_img">
+                            <img src="https://www.netmeds.com/images/product-v1/150x150/927520/prolixr_daily_essentials_bundle_0_0.jpg"
+                                alt="">
+                            <span class="discount-tag">20% OFF</span>
+
+                        </div>
+                        <div class="category_name">Prolixr Daily Essential Bundle</div>
+                        <span class="item_price"> <span class="">Best price* </span><span id="final_price"> Rs.
+                                1837.60</span>
+                            <p class="price"> MRP <strike id="price">Rs. 2297.00</strike></p>
+                        </span>
+                        <button id="addToCartBtn" value="Prolixr Daily Essential Bundle"
+                            onclick="addToCart(this.value)">ADD TO CART</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category_img">
+                            <img src="https://www.netmeds.com/images/product-v1/150x150/835774/accu_chek_instant_test_strips_50_s_0.jpg"
+                                alt="">
+                            <span class="discount-tag">15% OFF</span>
+
+                        </div>
+                        <div class="category_name">Accu-Chek Instant Test Strips 50's</div>
+                        <span class="item_price"> <span class="">Best price* </span><span id="final_price"> Rs.
+                                828.75</span>
+                            <p class="price"> MRP <strike id="price">Rs. 975.00</strike></p>
+                        </span>
+                        <button id="addToCartBtn" value="Accu-Chek Instant Test Strips 50's"
+                            onclick="addToCart(this.value)">ADD TO CART</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="category_img">
+                            <img src="https://www.netmeds.com/images/product-v1/150x150/38061/b_protin_nutritional_powder_supplement_chocolate_500_gm_0.jpg"
+                                alt="">
+                            <span class="discount-tag">12% OFF</span>
+
+                        </div>
+                        <div class="category_name">B-Protin Nutritional Powder Supplement - Chocolate 500 gm</div>
+                        <span class="item_price"> <span class="">Best price* </span><span id="final_price"> Rs.
+                                462.00</span>
+                            <p class="price"> MRP <strike id="price">Rs. 525.00</strike></p>
+                        </span>
+                        <button id="addToCartBtn" value="B-Protin Nutritional Powder Supplement - Chocolate 500 gm"
+                            onclick="addToCart(this.value)">ADD TO CART</button>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        slideToClickedSlide: false,
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            }
+        }
+    });
+
+
+</script>

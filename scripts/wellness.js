@@ -51,7 +51,7 @@ let limited_deals_data = [
 var cart_data = JSON.parse(localStorage.getItem("cartData")) || [];
 function addToCart(item) {
   console.log(item);
-  document.getElementById("addToCartBtn").textContent = "ADDED TO CART";
+  alert("Item added to cart");
   limited_deals_data.forEach(function (elem) {
     if (item === elem.title) {
       cart_data.push(elem);

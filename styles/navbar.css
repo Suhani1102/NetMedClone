@@ -1,0 +1,188 @@
+#navbar {
+  /* border: 1px solid black; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#nav_header {
+  display: flex;
+  height: 90px;
+  line-height: 90px;
+  background-color: #32aeb1;
+  padding: 0 15px;
+}
+
+.logo {
+  max-width: 168px;
+  margin: 0 32px 0 0;
+}
+
+a > img {
+  width: 168px;
+  height: 100%;
+}
+
+.searchbar {
+  width: 48%;
+  margin: 0 60px 0 0;
+}
+
+.searchbar > input {
+  height: 48px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 6px;
+  line-height: normal;
+  width: 100%;
+  border: 1px solid #32aeb1;
+  padding: 0 15px;
+}
+
+.upload_prescription,
+.cart,
+.login {
+  margin: 0 10px;
+  line-height: 90px;
+  height: 90px;
+}
+
+.upload_prescription > a,
+.cart > a,
+.login > a {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  background-size: 24px;
+  padding-left: 32px;
+  text-decoration: none;
+  height: 90px;
+  display: inline-block;
+}
+
+.upload_prescription > a {
+  background: url("https://www.netmeds.com/assets/gloryweb/images/icons/upload_rx.svg")
+    no-repeat left center;
+}
+
+.cart > a {
+  background: url("https://www.netmeds.com/assets/gloryweb/images/icons/cart_icon.svg")
+    no-repeat left center;
+}
+
+.login > a {
+  background: url("	https://www.netmeds.com/assets/gloryweb/images/icons/profile_icon.svg")
+    no-repeat left center;
+}
+
+#main_navigation {
+  background-color: #32aeb1;
+}
+
+#main_navigation > ul {
+  width: 80%;
+  margin: 0px auto;
+  padding: 0px;
+  list-style: none;
+  height: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#main_navigation > ul > li {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  height: 46px;
+  position: relative;
+}
+
+#main_navigation > ul > li > a {
+  background-size: 40px;
+  padding-left: 48px !important;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  height: 46px;
+  display: inline-block;
+  line-height: 46px;
+  font-size: 14px;
+}
+
+li > .nav-med {
+  background: url("https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/medicine.svg")
+    0 0 no-repeat;
+}
+li > .nav-wellness {
+  background: url("	https://www.netmeds.com/assets/gloryweb/images/icons/wellness.svg")
+    0 0 no-repeat;
+}
+li > .nav-lab {
+  background: url("	https://www.netmeds.com/assets/gloryweb/images/icons/diagnostics.svg")
+    0 0 no-repeat;
+}
+li > .nav-beauty {
+  background: url("	https://www.netmeds.com/assets/gloryweb/images/icons/beauty.svg")
+    0 0 no-repeat;
+}
+li > .nav-health {
+  background: url("https://www.netmeds.com/assets/version1648145916/gloryweb/images/icons/health-library.svg")
+    0 0 no-repeat;
+}
+
+/* Nav Sections */
+#nav_sections {
+  flex-shrink: 0;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-bottom: 16px;
+  margin-top: 0px;
+  border-top: #02b7c2 solid 0px;
+  background-color: #ffffff;
+  line-height: 40px;
+}
+
+.navigation {
+  background: none;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1030px;
+  padding: 0px 10px;
+}
+
+.navigation > ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navigation > ul > li {
+  box-sizing: border-box;
+  color: #151b39;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  position: relative;
+  text-decoration: none;
+}
+
+.navigation > ul > li > a {
+  box-sizing: border-box;
+  color: #151b39;
+  line-height: 42px;
+  padding: 0px;
+  position: relative;
+  text-decoration: none;
+}
